@@ -23,3 +23,15 @@ for ((j = $numero1; j < $numero2 + 1; j++)); do
         echo $j
     fi
 done
+
+
+
+#!/bin/bash
+
+cd $1
+
+lineas=$((ls -l))
+
+regex="(-.{2}x.*\s)^(.*)$"
+
+echo $lineas
