@@ -23,10 +23,6 @@ END //
 
 -- TEST --
 
-SET @resultado="";
-CALL sign(-6, resultado);
-SELECT resultado;
-/* CALL sign(4, resultado);
-SELECT resultado;
-CALL sign(0, resultado);
-SELECT resultado; */
+SET @resultado = "";
+CALL sign(0, @resultado);
+SELECT @resultado;
